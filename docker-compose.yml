@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
       args:
         - CONTAINER_TIMEZONE="Europe/Helsinki"
-    image: ludx/particl:latest
+    image: tecnovert/ludx-particl:latest
     volumes:
       - ./data/particl:/root/.particl
 #      - ./data/particl-tor:/var/lib/tor
