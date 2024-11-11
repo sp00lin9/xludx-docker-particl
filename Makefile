@@ -5,7 +5,7 @@ build-018:
 	time docker build --no-cache --build-arg PARTICL_VERSION=0.18.1.5 --build-arg CONTAINER_TIMEZONE=Europe/Helsinki -t ludx/particl:0.18 -t ludx/particl:0.18.1.5 -t docker.io/ludx/particl:0.18.1.5 -t docker.io/ludx/particl:latest .
 
 build-019:
-	time docker build --no-cache --build-arg BUILD=false --build-arg PARTICL_VERSION=0.19.2.12 --build-arg CONTAINER_TIMEZONE=Europe/Helsinki -t tecnovert/ludx-particl:0.19 -t tecnovert/ludx-particl:0.19.2 -t tecnovert/ludx-particl:0.19.2.12 -t docker.io/tecnovert/ludx-particl:0.19.2.12 -t docker.io/tecnovert/ludx-particl:latest .
+	time docker build --no-cache --build-arg BUILD=false --build-arg PARTICL_VERSION=0.19.2.12 --build-arg CONTAINER_TIMEZONE=Europe/Helsinki -t sp00lin9/ludx-particl:0.19 -t sp00lin9/ludx-particl:0.19.2 -t sp00lin9/ludx-particl:0.19.2.12 -t docker.io/sp00lin9/ludx-particl:0.19.2.12 -t docker.io/sp00lin9/ludx-particl:latest .
 
 run:
 	docker run --name particld -e CONF_RPCUSERNAME=testnet -e CONF_RPCPASSWORD=testnet \
@@ -47,7 +47,7 @@ push-018:
 	docker push docker.io/ludx/particl:0.18
 
 push-019:
-	docker push docker.io/tecnovert/ludx-particl:0.19.2.12
-	docker push docker.io/tecnovert/ludx-particl:0.19
-	docker push docker.io/tecnovert/ludx-particl:latest
+	docker push docker.io/sp00lin9/ludx-particl:0.19.2.12
+	docker push docker.io/sp00lin9/ludx-particl:0.19
+	docker push docker.io/sp00lin9/ludx-particl:latest
 
